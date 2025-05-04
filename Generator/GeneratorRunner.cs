@@ -21,7 +21,7 @@ namespace Laborat1.Generator
             workingDirectory = solutionRoot;
 
             this.javaPath = javaPath;
-            jarRelativePath = "/Generator.jar";
+            //jarRelativePath = "Generator.jar";
             this.jarPath = Path.Combine(solutionRoot, jarRelativePath);
 
             if (!File.Exists(jarPath))
