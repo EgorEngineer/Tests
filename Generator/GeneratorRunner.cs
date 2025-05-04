@@ -16,11 +16,12 @@ namespace Laborat1.Generator
 
         public GeneratorRunner(string jarRelativePath, string javaPath = "java")
         {
-            // Получаем корень решения (уровень выше bin/Debug/netX)
+            
             string solutionRoot = Directory.GetParent(AppContext.BaseDirectory)!.Parent!.Parent!.Parent!.FullName;
             workingDirectory = solutionRoot;
 
             this.javaPath = javaPath;
+            jarRelativePath = "/Generator.jar";
             this.jarPath = Path.Combine(solutionRoot, jarRelativePath);
 
             if (!File.Exists(jarPath))
