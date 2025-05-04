@@ -17,7 +17,7 @@ namespace Laborat1.JSONWorks
         private static readonly object lockObject = new object();
         private static bool generatorRan = false;
         private static readonly string jsonRelativePath = @"Data/data.json";
-        private static readonly string jarRelativePath = @"Generator/generator.jar"; // Update this path as needed
+        private static readonly string jarRelativePath = @"Generator/Generator.jar"; 
 
         private static string GetJsonPath()
         {
