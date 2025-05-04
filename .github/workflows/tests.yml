@@ -20,9 +20,6 @@ jobs:
         distribution: 'temurin'
         java-version: '24'
 
-    - name: Check generator.jar
-      run: ls -l Tests/Generator/generator.jar
-
     - name: Восстановление зависимостей
       run: dotnet restore
 
